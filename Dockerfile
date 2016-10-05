@@ -10,6 +10,6 @@ RUN apk add --update \
   && pip install awscli \
   && rm -rf /var/cache/apk/*
 
-ADD entrypoint.sh /entrypoint.sh
+ADD ./entrypoint.sh /entrypoint.sh
 RUN chmod ugo+x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
