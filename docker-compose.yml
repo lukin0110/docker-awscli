@@ -1,0 +1,6 @@
+aws:
+    build: .
+    stdin_open: true
+    tty: true
+    env_file:
+      - aws.env
